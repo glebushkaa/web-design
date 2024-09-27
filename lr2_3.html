@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hyperlinks</title>
+        <link rel="stylesheet" href="general.css">
+        <style>
+            body {
+                background-image:url("gifs/blue-gradient.gif");
+                background-size:100%;
+                background-repeat: repeat;
+                background-attachment: scroll;
+            }
+            .card {
+                background: white;
+                border-radius: 60px;
+                height: 300px;
+                width: 300px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                color: black;
+                font-family: Verdana,serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-decoration: none;
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 40px
+            }
+            .row a {
+                text-decoration: none;
+            }
+            .step-title {
+                font-size: 26px;
+                font-weight: bold;
+            }
+            .step-subtitle {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            .horizontal-line {
+                background-color: white;
+                width: 100%;
+                height: 4px;
+                border-style: none;
+                margin-top: 24px;
+                margin-bottom: 24px
+            }
+            .icon {
+                border-radius: 360px;
+                background-color: white;
+                padding: 20px;
+                height: 48px;
+                width: 48px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            }
+            .rectangle-card {
+                background: white;
+                border-radius: 60px;
+                height: 100px;
+                width: fit-content;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                color: black;
+                font-size: 20px;
+                padding-left: 32px;
+                padding-right: 32px;
+                font-family: Verdana,serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-decoration: none;
+            }
+            .rectangle-card-container a {
+                text-decoration-color: darkgreen;
+            }
+        </style>
+    </head>
+
+    <body style="font-family: Verdana,serif; color: white; margin-left: 24px; margin-right: 24px">
+
+        <div>
+            <h1 style="text-align: center; width: 100%">Попередні кроки</h1>
+            <div class="row">
+                <a href="lr2_1.html" title="Перший крок">
+                    <div class="card">
+                        <div class="step-title">Перший крок</div>
+                        <div class="step-subtitle">Відображення зображень та їх стилізація</div>
+                    </div>
+                </a>
+                <a href="lr2-2.html" title="Другий крок">
+                    <div class="card">
+                        <div class="step-title">Другий крок</div>
+                        <div class="step-subtitle">Показ GIF як фонове зображення на веб-сторінці</div>
+                    </div>
+                </a>
+            </div>
+
+            <hr class="horizontal-line">
+
+            <div class="row">
+                <a href="https://www.google.com/" target="_blank">
+                    <img class="icon" src="images/google.png" alt="Google">
+                </a>
+                <a href="https://www.yahoo.com/" target="_blank">
+                    <img class="icon" src="images/yahoo.png" alt="Yahoo">
+                </a>
+            </div>
+
+            <hr class="horizontal-line">
+
+            <div class="rectangle-card-container centered">
+                <a style="width: fit-content" href="https://www.css.in.ua/" target="_blank" title="Відвідайте веб-довідник, щоб здобути нові знання">
+                    <div class="rectangle-card centered">Український веб-довідник</div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

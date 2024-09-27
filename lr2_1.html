@@ -4,21 +4,12 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Картинки 1</title>
+      <link rel="stylesheet" href="general.css">
       <style>
           .red-border {
               border-style: solid;
               border-color: red;
               border-width: 5px;
-          }
-          .centered {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              text-align: center;
-          }
-          .column {
-              display: flex;
-              flex-direction: column;
           }
           .half-width-image {
               width: 50%;
@@ -28,7 +19,7 @@
               width: inherit;
               height: auto;
           }
-          .row {
+          .spaced-between-row {
               display: flex;
               flex-direction: row;
               justify-content: space-between;
@@ -42,7 +33,7 @@
           <img style ="width: 300px; height: 300px; object-fit: cover" src="kotlin.png" alt="Kotlin">
       </div>
 
-      <div class="row">
+      <div class="spaced-between-row">
           <div class="column centered half-width-image" style="border-style: solid">
               <img src="images/kotlin-android.png" alt="Kotlin for Android">
               <div style="font-family: 'Comic Sans MS',sans-serif; font-size: 32px; margin-bottom: 12px">Друге зображення</div>
