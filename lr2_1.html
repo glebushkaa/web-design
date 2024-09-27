@@ -1,14 +1,61 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" >
   <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Картинки 1</title>
+      <style>
+          .red-border {
+              border-style: solid;
+              border-color: red;
+              border-width: 5px;
+          }
+          .centered {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+          }
+          .column {
+              display: flex;
+              flex-direction: column;
+          }
+          .half-width-image {
+              width: 50%;
+              height: auto;
+          }
+          img {
+              width: inherit;
+              height: auto;
+          }
+          .row {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100vw;
+          }
+      </style>
   </head>
 
   <body>
-  <div><img style ="width: 300px; height: 300px; object-fit: cover" src="kotlin.png" alt="Kotlin"></div>
-  <div><img style ="align-content: center" src="images/kotlin-android.png" alt="Kotlin for Android"></div>
-      <div><img src="https://molo17.com/wp-content/uploads/2021/11/StudioCompose10.jpg"></div>
+      <div>
+          <img style ="width: 300px; height: 300px; object-fit: cover" src="kotlin.png" alt="Kotlin">
+      </div>
+
+      <div class="row">
+          <div class="column centered half-width-image" style="border-style: solid">
+              <img src="images/kotlin-android.png" alt="Kotlin for Android">
+              <div style="font-family: 'Comic Sans MS',sans-serif; font-size: 32px; margin-bottom: 12px">Друге зображення</div>
+          </div>
+
+          <div class="red-border centered half-width-image">
+              <img src="https://molo17.com/wp-content/uploads/2021/11/StudioCompose10.jpg" alt="Compose">
+          </div>
+      </div>
+
+      <div class="centered" style="margin-top:32px; margin-bottom: 32px">
+          <img src="unknown-image.jpg" alt="Тут могла бути Ваша реклама">
+      </div>
   </body>
 
 </html>
