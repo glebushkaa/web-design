@@ -1,0 +1,34 @@
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    background-image:url("../gifs/blue-gradient.gif");
+    background-size:100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+.rectangle-card {
+    background: white;
+    border-radius: 60px;
+    height: 100px;
+    width: fit-content;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family: Verdana,serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+}
