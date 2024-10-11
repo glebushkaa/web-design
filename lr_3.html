@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Table page</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .image-container {
+                background: url(images/web-design-header.jpg);
+                width: 60%;
+                position: relative;
+                text-align: center;
+                font-family: Verdana, sans-serif;
+                font-size: 32px;
+                font-weight: bold;
+                color: black;
+            }
+
+            #header-row {
+                height: 200px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            #header-student-card {
+                width: 25%;
+                height: inherit;
+                font-family: Verdana, sans-serif;
+                font-size: 18px;
+                text-align: center;
+                background: cadetblue;
+            }
+
+            .side-content {
+                background: #fff3e5;
+                width: 20%;
+            }
+
+            #centered-content {
+                background: aquamarine;
+                padding: 20px;
+            }
+
+            #content-row td {
+                padding: 0;
+                margin: 0;
+            }
+
+            #content-row table {
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            #statistics-table {
+                width: 80%;
+                max-width: 80%;
+                height: 100%;
+                border-collapse: separate;
+                table-layout: fixed;
+                margin: 0 auto;
+                background: gray;
+            }
+
+            .option-text {
+                width: 20%;
+                color: blue;
+                font-size: 16pt;
+            }
+
+            .option-progress {
+                color: white;
+                font-size: 14pt;
+                text-align: right;
+            }
+
+            .option-table {
+                width: 100%;
+            }
+
+            .statistics-line {
+                display: block;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <tr id="header-row">
+                <td class="image-container">Веб-дизайн</td>
+                <td><img src="images/webdesign.png" alt="Web-design-2"></td>
+                <td id="header-student-card">Мокрий<br>Гліб</td>
+            </tr>
+            <tr id="content-row">
+                <td colspan="3">
+                    <table>
+                        <tr>
+                            <td class="side-content"></td>
+                            <td>
+                                <div id="centered-content">
+                                    <p>
+                                        Веб-дизайн – це галузь веб-розробки та різновид дизайну, до задач яких
+                                        входить проектування користувальницьких веб-інтерфейсів для сайтів або
+                                        вебзастосунків.
+                                    </p>
+                                    <p>
+                                        Веб-технологія – це сукупність методів та програмно-технічних засобів, інтегрованих з
+                                        метою
+                                        ефективного опрацювання веб-ресурсів, які знаходяться
+                                        у веб-просторі.
+                                    </p>
+                                    <p>
+                                        Розробка веб-сайту або веб-застосунку зазвичай зводиться до використання трьох основних
+                                        технологій:
+                                    </p>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <br><br>
+
+                                    <table id="statistics-table">
+                                        <caption>Внесок кожної з технологій в створення певної веб-сторінки</caption>
+                                        <tr class="statistics-line" style="margin-top: 10px">
+                                            <td class="option-text">HTML</td>
+                                            <td>
+                                                <table class="option-table">
+                                                    <tr>
+                                                        <td style="width: 57%;background: crimson;" class="option-progress">
+                                                            57%
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr class="statistics-line">
+                                            <td class="option-text">CSS</td>
+                                            <td>
+                                                <table class="option-table">
+                                                    <tr>
+                                                        <td class="option-progress" style="width: 31%; background: darkgreen">
+                                                            31%
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr class="statistics-line">
+                                            <td class="option-text">JavaScript</td>
+                                            <td>
+                                                <table class="option-table">
+                                                    <tr>
+                                                        <td class="option-progress"
+                                                            style="width: 12%; background: darkslateblue">12%
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                            <td class="side-content"></td>
+                        </tr>
+                        <tr style="height: 30px; background: antiquewhite;text-align: right; width: 100%">
+                            <td colspan="3">© Мокрий Гліб</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
