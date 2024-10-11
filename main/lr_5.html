@@ -2,10 +2,55 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Frames</title>
+        <style>
+            body {
+                height: 100vh;
+                width: 100vw;
+            }
+            #header-container {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                justify-content: space-between;
+            }
+            #header-container iframe {
+                height: 80%;
+                width: 40%;
+            }
+            #column {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+            #column a {
+                color: black;
+                font-family: Verdana,serif;
+                text-align: start;
+                font-size: 20pt;
+            }
+            #selected-frame {
+                width: 80%;
+                height: 80%;
+            }
+        </style>
     </head>
 
     <body>
-
+        <div id="header-container">
+            <iframe src="../lr-1/lr1_1.html"></iframe>
+            <iframe src="../lr-2/steps/lr2_1.html"></iframe>
+        </div>
+        <div id="column">
+            <iframe id="selected-frame" src="lr_1.html" name="selected-frame"></iframe>
+            <a href="lr_1.html" target="selected-frame">Перший крок</a>
+            <a href="lr_2.html" target="selected-frame">Другий крок</a>
+            <a href="lr_3.html" target="selected-frame">Третій крок</a>
+            <a href="lr_4.html" target="selected-frame">Четвертий крок</a>
+            <a href="lr_5.html" target="selected-frame">П'ятий крок</a>
+        </div>
     </body>
 </html>
